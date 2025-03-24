@@ -39,6 +39,39 @@ Certifique-se de que a placa **Wemos D1 R1** está selecionada em **Ferramentas 
 
 A porta de comunicação deve ser configurada corretamente em **Ferramentas > Porta**.
 
+## Como Configurar o SinricPro
+
+1. **Criação de uma conta no SinricPro**:
+   - Acesse o portal [SinricPro](https://sinric.pro/).
+   - Crie uma conta e faça login.
+
+2. **Criação de um dispositivo**:
+   - Depois de logado, crie um novo dispositivo clicando em "Add Device".
+   - Escolha o tipo de dispositivo (por exemplo, **Switch** para uma lâmpada ou abajur).
+   - Copie o **Device ID** fornecido para configurar no código do Arduino.
+
+3. **Gerar Chaves de API**:
+   - No painel do SinricPro, acesse a aba **Settings**.
+   - Gere uma nova chave **APP Key** e **APP Secret**, que serão usadas no código do Arduino.
+
+4. **Configuração do dispositivo**:
+   - No portal SinricPro, associe o **Device ID** ao dispositivo criado.
+   - Garanta que o dispositivo esteja visível para a Alexa.
+
+## Como Configurar a Alexa
+
+1. **Habilitar a Skill SinricPro**:
+   - Abra o aplicativo **Alexa** no seu celular.
+   - Vá para **Mais > Skills & Jogos** e procure por "SinricPro".
+   - Clique em "Ativar" e faça login com a conta do SinricPro que você criou.
+
+2. **Adicionar o Dispositivo**:
+   - Após a ativação da skill, clique em **Descobrir dispositivos**.
+   - A Alexa buscará os dispositivos cadastrados no SinricPro e, ao encontrar o dispositivo que você criou (como o **Abajour**), ele será adicionado à lista de dispositivos controláveis.
+
+3. **Testar o Controle por Voz**:
+   - Agora, você pode controlar o dispositivo usando comandos de voz como "Alexa, ligar o abajur" ou "Alexa, desligar o abajur".
+
 ## Como Testar
 
 1. **Conecte a placa Wemos D1** ao computador via USB.
